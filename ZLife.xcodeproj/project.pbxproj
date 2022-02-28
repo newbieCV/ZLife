@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		1F50A69127CD1D33000C702D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50A69027CD1D33000C702D /* AppDelegate.swift */; };
 		1F50A69327CD1D33000C702D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50A69227CD1D33000C702D /* SceneDelegate.swift */; };
-		1F50A69527CD1D33000C702D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50A69427CD1D33000C702D /* ViewController.swift */; };
+		1F50A69527CD1D33000C702D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50A69427CD1D33000C702D /* HomeViewController.swift */; };
 		1F50A69827CD1D33000C702D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F50A69627CD1D33000C702D /* Main.storyboard */; };
 		1F50A69A27CD1D35000C702D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F50A69927CD1D35000C702D /* Assets.xcassets */; };
 		1F50A69D27CD1D35000C702D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F50A69B27CD1D35000C702D /* LaunchScreen.storyboard */; };
+		1F50A6A727CD2CD5000C702D /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50A6A627CD2CD5000C702D /* MineViewController.swift */; };
+		1F50A6A927CD3095000C702D /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50A6A827CD3095000C702D /* RootTabBarController.swift */; };
+		1F50A6AB27CD4279000C702D /* CommonTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50A6AA27CD4279000C702D /* CommonTools.swift */; };
 		6C480875D8F39840B97896F8 /* Pods_ZLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C6B317267DDCDE9EA19553 /* Pods_ZLife.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,11 +24,14 @@
 		1F50A68D27CD1D33000C702D /* ZLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F50A69027CD1D33000C702D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F50A69227CD1D33000C702D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1F50A69427CD1D33000C702D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1F50A69427CD1D33000C702D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1F50A69727CD1D33000C702D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F50A69927CD1D35000C702D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F50A69C27CD1D35000C702D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F50A69E27CD1D35000C702D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F50A6A627CD2CD5000C702D /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		1F50A6A827CD3095000C702D /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		1F50A6AA27CD4279000C702D /* CommonTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTools.swift; sourceTree = "<group>"; };
 		4A8E78D1A7B56BD04E94D753 /* Pods-ZLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZLife.release.xcconfig"; path = "Target Support Files/Pods-ZLife/Pods-ZLife.release.xcconfig"; sourceTree = "<group>"; };
 		B5F9863D33D43CC87B3CAA5C /* Pods-ZLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZLife.debug.xcconfig"; path = "Target Support Files/Pods-ZLife/Pods-ZLife.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,11 +71,14 @@
 			children = (
 				1F50A69027CD1D33000C702D /* AppDelegate.swift */,
 				1F50A69227CD1D33000C702D /* SceneDelegate.swift */,
-				1F50A69427CD1D33000C702D /* ViewController.swift */,
+				1F50A6A827CD3095000C702D /* RootTabBarController.swift */,
 				1F50A69627CD1D33000C702D /* Main.storyboard */,
 				1F50A69927CD1D35000C702D /* Assets.xcassets */,
 				1F50A69B27CD1D35000C702D /* LaunchScreen.storyboard */,
 				1F50A69E27CD1D35000C702D /* Info.plist */,
+				1F50A69427CD1D33000C702D /* HomeViewController.swift */,
+				1F50A6A627CD2CD5000C702D /* MineViewController.swift */,
+				1F50A6AA27CD4279000C702D /* CommonTools.swift */,
 			);
 			path = ZLife;
 			sourceTree = "<group>";
@@ -88,7 +97,6 @@
 				B5F9863D33D43CC87B3CAA5C /* Pods-ZLife.debug.xcconfig */,
 				4A8E78D1A7B56BD04E94D753 /* Pods-ZLife.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -189,8 +197,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F50A69527CD1D33000C702D /* ViewController.swift in Sources */,
+				1F50A69527CD1D33000C702D /* HomeViewController.swift in Sources */,
+				1F50A6A927CD3095000C702D /* RootTabBarController.swift in Sources */,
+				1F50A6AB27CD4279000C702D /* CommonTools.swift in Sources */,
 				1F50A69127CD1D33000C702D /* AppDelegate.swift in Sources */,
+				1F50A6A727CD2CD5000C702D /* MineViewController.swift in Sources */,
 				1F50A69327CD1D33000C702D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
