@@ -20,11 +20,15 @@ class RootTabBarController: UITabBarController {
         let homeImg = CommonTools.tailorImage(image: UIImage(named: "home") ?? UIImage(), newSize: newSize)
         homeVC.tabBarItem = UITabBarItem(title: "首页", image: homeImg, tag: 1)
         
+        let naviVC = NavigateViewController()
+        let naviImg = CommonTools.tailorImage(image: UIImage(named: "map") ?? UIImage(), newSize: newSize)
+        naviVC.tabBarItem = UITabBarItem(title: "地图", image: naviImg, tag: 2)
+        
         let mineVC = MineViewController()
         let mineImg = CommonTools.tailorImage(image: UIImage(named: "mine") ?? UIImage(), newSize: newSize)
-        mineVC.tabBarItem = UITabBarItem(title: "我的", image: mineImg, tag: 2)
+        mineVC.tabBarItem = UITabBarItem(title: "我的", image: mineImg, tag: 3)
         
-        let tabArray = [homeVC, mineVC]
+        let tabArray = [homeVC, naviVC, mineVC]
         viewControllers = tabArray
         
         tabBar.tintColor = .orange

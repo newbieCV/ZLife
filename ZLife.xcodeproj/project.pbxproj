@@ -16,6 +16,7 @@
 		1F50A6A727CD2CD5000C702D /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50A6A627CD2CD5000C702D /* MineViewController.swift */; };
 		1F50A6A927CD3095000C702D /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50A6A827CD3095000C702D /* RootTabBarController.swift */; };
 		1F50A6AB27CD4279000C702D /* CommonTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50A6AA27CD4279000C702D /* CommonTools.swift */; };
+		1FDCED1F27CE6FF20054FF2E /* NavigateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDCED1E27CE6FF20054FF2E /* NavigateViewController.swift */; };
 		6C480875D8F39840B97896F8 /* Pods_ZLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C6B317267DDCDE9EA19553 /* Pods_ZLife.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		1F50A6A627CD2CD5000C702D /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		1F50A6A827CD3095000C702D /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		1F50A6AA27CD4279000C702D /* CommonTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTools.swift; sourceTree = "<group>"; };
+		1FDCED1E27CE6FF20054FF2E /* NavigateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigateViewController.swift; sourceTree = "<group>"; };
 		4A8E78D1A7B56BD04E94D753 /* Pods-ZLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZLife.release.xcconfig"; path = "Target Support Files/Pods-ZLife/Pods-ZLife.release.xcconfig"; sourceTree = "<group>"; };
 		B5F9863D33D43CC87B3CAA5C /* Pods-ZLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZLife.debug.xcconfig"; path = "Target Support Files/Pods-ZLife/Pods-ZLife.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +79,7 @@
 				1F50A69B27CD1D35000C702D /* LaunchScreen.storyboard */,
 				1F50A69E27CD1D35000C702D /* Info.plist */,
 				1F50A69427CD1D33000C702D /* HomeViewController.swift */,
+				1FDCED1E27CE6FF20054FF2E /* NavigateViewController.swift */,
 				1F50A6A627CD2CD5000C702D /* MineViewController.swift */,
 				1F50A6AA27CD4279000C702D /* CommonTools.swift */,
 			);
@@ -111,6 +114,8 @@
 				1F50A68927CD1D33000C702D /* Sources */,
 				1F50A68A27CD1D33000C702D /* Frameworks */,
 				1F50A68B27CD1D33000C702D /* Resources */,
+				F76E655716755DF907D8DF0B /* [CP] Embed Pods Frameworks */,
+				6C1129EAD663748A6E292506 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +173,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6C1129EAD663748A6E292506 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZLife/Pods-ZLife-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZLife/Pods-ZLife-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZLife/Pods-ZLife-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BDAC267F85E5559DE19EDF51 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -190,6 +212,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F76E655716755DF907D8DF0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZLife/Pods-ZLife-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZLife/Pods-ZLife-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZLife/Pods-ZLife-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -199,6 +238,7 @@
 			files = (
 				1F50A69527CD1D33000C702D /* HomeViewController.swift in Sources */,
 				1F50A6A927CD3095000C702D /* RootTabBarController.swift in Sources */,
+				1FDCED1F27CE6FF20054FF2E /* NavigateViewController.swift in Sources */,
 				1F50A6AB27CD4279000C702D /* CommonTools.swift in Sources */,
 				1F50A69127CD1D33000C702D /* AppDelegate.swift in Sources */,
 				1F50A6A727CD2CD5000C702D /* MineViewController.swift in Sources */,
