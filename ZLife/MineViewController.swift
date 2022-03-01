@@ -8,11 +8,8 @@
 import UIKit
 
 class MineViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
     }
-
-
 }
