@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import SnapKit
 import AMapFoundationKit
 import MAMapKit
 
@@ -31,8 +30,11 @@ class NavigateViewController: UIViewController {
         mapView.showsCompass = true
         mapView.compassOrigin = CGPoint(x: UIScreen.main.bounds.width - 40, y: 40)
         mapView.isZoomEnabled = true
+        mapView.isScrollEnabled = true
         mapView.zoomLevel = 11
+        mapView.isRotateEnabled = false
         self.view.addSubview(mapView)
+        
     }
 }
 
