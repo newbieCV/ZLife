@@ -1,4 +1,4 @@
-module Pods_ZLife {
+framework module Pods_ZLife {
   umbrella header "Pods-ZLife-umbrella.h"
 
   export *
