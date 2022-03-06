@@ -8,18 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		1D6B0DEF26B6FF15D3D44B5E /* Pods_ZLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B9E3AF3A9BB746A377F084 /* Pods_ZLife.framework */; };
+		1F3EF4BF27D510F60081275B /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3EF4BE27D510F60081275B /* MineViewController.swift */; };
+		1F3EF4C127D511DC0081275B /* MineTopUserInfoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3EF4C027D511DC0081275B /* MineTopUserInfoViewCell.swift */; };
+		1F3EF4C327D5135C0081275B /* MineUserToolViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3EF4C227D5135C0081275B /* MineUserToolViewCell.swift */; };
 		1F50A69127CD1D33000C702D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50A69027CD1D33000C702D /* AppDelegate.swift */; };
 		1F50A69327CD1D33000C702D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50A69227CD1D33000C702D /* SceneDelegate.swift */; };
 		1F50A69527CD1D33000C702D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50A69427CD1D33000C702D /* HomeViewController.swift */; };
 		1F50A69827CD1D33000C702D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F50A69627CD1D33000C702D /* Main.storyboard */; };
 		1F50A69A27CD1D35000C702D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F50A69927CD1D35000C702D /* Assets.xcassets */; };
 		1F50A69D27CD1D35000C702D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F50A69B27CD1D35000C702D /* LaunchScreen.storyboard */; };
-		1F50A6A727CD2CD5000C702D /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50A6A627CD2CD5000C702D /* MineViewController.swift */; };
 		1F50A6A927CD3095000C702D /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50A6A827CD3095000C702D /* RootTabBarController.swift */; };
 		1F50A6AB27CD4279000C702D /* CommonTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50A6AA27CD4279000C702D /* CommonTools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F3EF4BE27D510F60081275B /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		1F3EF4C027D511DC0081275B /* MineTopUserInfoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineTopUserInfoViewCell.swift; sourceTree = "<group>"; };
+		1F3EF4C227D5135C0081275B /* MineUserToolViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineUserToolViewCell.swift; sourceTree = "<group>"; };
 		1F50A68D27CD1D33000C702D /* ZLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F50A69027CD1D33000C702D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F50A69227CD1D33000C702D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,7 +33,6 @@
 		1F50A69927CD1D35000C702D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F50A69C27CD1D35000C702D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F50A69E27CD1D35000C702D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F50A6A627CD2CD5000C702D /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		1F50A6A827CD3095000C702D /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		1F50A6AA27CD4279000C702D /* CommonTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTools.swift; sourceTree = "<group>"; };
 		4A8E78D1A7B56BD04E94D753 /* Pods-ZLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZLife.release.xcconfig"; path = "Target Support Files/Pods-ZLife/Pods-ZLife.release.xcconfig"; sourceTree = "<group>"; };
@@ -48,6 +52,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F3EF4BB27D510AF0081275B /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				1F3EF4BE27D510F60081275B /* MineViewController.swift */,
+				1F3EF4C027D511DC0081275B /* MineTopUserInfoViewCell.swift */,
+				1F3EF4C227D5135C0081275B /* MineUserToolViewCell.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
 		1F50A68427CD1D33000C702D = {
 			isa = PBXGroup;
 			children = (
@@ -77,7 +91,7 @@
 				1F50A69B27CD1D35000C702D /* LaunchScreen.storyboard */,
 				1F50A69E27CD1D35000C702D /* Info.plist */,
 				1F50A69427CD1D33000C702D /* HomeViewController.swift */,
-				1F50A6A627CD2CD5000C702D /* MineViewController.swift */,
+				1F3EF4BB27D510AF0081275B /* Mine */,
 				1F50A6AA27CD4279000C702D /* CommonTools.swift */,
 			);
 			path = ZLife;
@@ -237,8 +251,10 @@
 				1F50A6A927CD3095000C702D /* RootTabBarController.swift in Sources */,
 				1F50A6AB27CD4279000C702D /* CommonTools.swift in Sources */,
 				1F50A69127CD1D33000C702D /* AppDelegate.swift in Sources */,
-				1F50A6A727CD2CD5000C702D /* MineViewController.swift in Sources */,
+				1F3EF4C127D511DC0081275B /* MineTopUserInfoViewCell.swift in Sources */,
 				1F50A69327CD1D33000C702D /* SceneDelegate.swift in Sources */,
+				1F3EF4C327D5135C0081275B /* MineUserToolViewCell.swift in Sources */,
+				1F3EF4BF27D510F60081275B /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

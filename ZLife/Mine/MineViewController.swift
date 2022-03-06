@@ -29,9 +29,11 @@ class MineViewController: UIViewController {
         layout.minimumLineSpacing = 6
         layout.minimumInteritemSpacing = 8
         let view = UICollectionView(frame: view.bounds, collectionViewLayout: layout)
+        view.backgroundColor = .clear
         view.delegate = self
         view.dataSource = self
-        view.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "a")
+        view.register(MineTopUserInfoViewCell.self, forCellWithReuseIdentifier: "MineTopUserInfoViewCell")
+        view.register(MineUserToolViewCell.self, forCellWithReuseIdentifier: "MineUserToolViewCell")
         return view
     }()
 }
@@ -50,15 +52,16 @@ extension MineViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var cell: UICollectionViewCell
         if indexPath.section == 0 {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: "a", for: indexPath)
-            cell.backgroundColor = .blue
+            let cell: MineTopUserInfoViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MineTopUserInfoViewCell", for: indexPath) as! MineTopUserInfoViewCell
+            cell.tapEventCallback = {
+                print("此处处理cell的点击事件")
+            }
+            return cell
         } else {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: "a", for: indexPath)
-            cell.backgroundColor = .gray
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MineUserToolViewCell", for: indexPath)
+            return cell
         }
-        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -67,7 +70,7 @@ extension MineViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if indexPath.section == 0 {
-            return CGSize(width: kScreen.width(), height: 200)
+            return CGSize(width: kScreen.width() - 2, height: 200)
         } else {
             return CGSize(width: (kScreen.width() - 48) / 4, height: 60)
         }
