@@ -11,6 +11,6 @@ target 'ZLife' do
   pod 'ZLNavigation', :path => 'Lib/ZLNavigation'
 
   # Debug
-  pod 'LookinServer', :configurations => ['Debug']
+  # pod 'LookinServer', :configurations => ['Debug']
 
 end

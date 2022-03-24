@@ -6,7 +6,6 @@ PODS:
     - AMapFoundation-NO-IDFA (~> 1.6.9)
   - AMapSearch-NO-IDFA (8.1.0):
     - AMapFoundation-NO-IDFA (~> 1.6.9)
-  - LookinServer (1.0.4)
   - SnapKit (5.0.1)
   - ZLNavigation (0.0.1):
     - AMap3DMap-NO-IDFA (~> 8.1.0)
@@ -15,7 +14,6 @@ PODS:
     - AMapSearch-NO-IDFA (~> 8.1.0)
 
 DEPENDENCIES:
-  - LookinServer
   - SnapKit (~> 5.0.0)
   - ZLNavigation (from `Lib/ZLNavigation`)
 
@@ -25,7 +23,6 @@ SPEC REPOS:
     - AMapFoundation-NO-IDFA
     - AMapLocation-NO-IDFA
     - AMapSearch-NO-IDFA
-    - LookinServer
     - SnapKit
 
 EXTERNAL SOURCES:
@@ -37,10 +34,9 @@ SPEC CHECKSUMS:
   AMapFoundation-NO-IDFA: cc2ec7a2828ef292358ad594b7ee0ae21a7f097b
   AMapLocation-NO-IDFA: 9d7ec9b052405356600b59fe0a9a65261bacc54e
   AMapSearch-NO-IDFA: df1f7c79f251e0ca04b9761593f6453527957ea0
-  LookinServer: 743c1681771d0a8dcc38825325a080c3186404a5
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   ZLNavigation: 8a2c9e1f5e4c13231b52907db815377ac55c0409
 
-PODFILE CHECKSUM: 7859eda93bd516eee8a339ef1c8dea3c39caa63c
+PODFILE CHECKSUM: 53a0c6641f2c4c5d4f2e1c71ab070bdd21c22ef2
 
 COCOAPODS: 1.11.2
