@@ -8,7 +8,10 @@
 import UIKit
 import SnapKit
 
+//MARK: 我的页面
+
 class MineViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -36,9 +39,13 @@ class MineViewController: UIViewController {
         view.register(MineUserToolViewCell.self, forCellWithReuseIdentifier: "MineUserToolViewCell")
         return view
     }()
+    
 }
 
+//MARK: UICollectionViewDelegate && UICollectionViewDataSource
+
 extension MineViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
     }
@@ -75,4 +82,5 @@ extension MineViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return CGSize(width: (kScreen.width() - 48) / 4, height: 60)
         }
     }
+    
 }

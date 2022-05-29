@@ -12,7 +12,11 @@ struct kScreen {
     static let height = CommonTools.screenWidth
 }
 
+//MARK: 常用工具类
+
 class CommonTools {
+    
+    // 屏幕宽高
     class func screenWidth() -> CGFloat {
         return UIScreen.main.bounds.width
     }
@@ -29,4 +33,5 @@ class CommonTools {
         UIGraphicsEndImageContext()
         return newImg
     }
+    
 }

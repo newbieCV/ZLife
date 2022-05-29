@@ -7,7 +7,10 @@
 
 import UIKit
 
+//MARK: 我的页面，顶部个人信息区域
+
 class MineTopUserInfoViewCell: UICollectionViewCell {
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configUI()
@@ -31,4 +34,5 @@ class MineTopUserInfoViewCell: UICollectionViewCell {
             tapEventCallback()
         }
     }
+    
 }

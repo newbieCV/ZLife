@@ -7,7 +7,10 @@
 
 import UIKit
 
+//MARK: 我的页面，下方工具栏cell
+
 class MineUserToolViewCell: UICollectionViewCell {
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configUI()
@@ -23,4 +26,5 @@ class MineUserToolViewCell: UICollectionViewCell {
         contentView.layer.borderWidth = 0.5
         contentView.layer.masksToBounds = true
     }
+    
 }

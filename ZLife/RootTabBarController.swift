@@ -9,6 +9,7 @@ import UIKit
 import ZLNavigation
 
 class RootTabBarController: UITabBarController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         creatSubViewControllers()
@@ -35,4 +36,5 @@ class RootTabBarController: UITabBarController {
         tabBar.tintColor = .orange
         tabBar.backgroundColor = .lightGray
     }
+    
 }

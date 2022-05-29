@@ -7,10 +7,14 @@
 
 import UIKit
 
+//MARK: 首页，feed流
+
 class HomeViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
     }
+    
 }
 
