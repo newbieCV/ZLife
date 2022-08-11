@@ -19,6 +19,9 @@
 		1F50A69D27CD1D35000C702D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F50A69B27CD1D35000C702D /* LaunchScreen.storyboard */; };
 		1F50A6A927CD3095000C702D /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50A6A827CD3095000C702D /* RootTabBarController.swift */; };
 		1F50A6AB27CD4279000C702D /* CommonTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50A6AA27CD4279000C702D /* CommonTools.swift */; };
+		2B1036B628A4D844000CD983 /* MineUserToolViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1036B528A4D844000CD983 /* MineUserToolViewModel.swift */; };
+		2B105FD528A4FA60000CD983 /* ARSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B105FD428A4FA60000CD983 /* ARSwiftUIView.swift */; };
+		2B105FD928A502EC000CD983 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B105FD828A502EC000CD983 /* ARViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		1F50A69E27CD1D35000C702D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F50A6A827CD3095000C702D /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		1F50A6AA27CD4279000C702D /* CommonTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTools.swift; sourceTree = "<group>"; };
+		2B1036B528A4D844000CD983 /* MineUserToolViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineUserToolViewModel.swift; sourceTree = "<group>"; };
+		2B105FD428A4FA60000CD983 /* ARSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSwiftUIView.swift; sourceTree = "<group>"; };
+		2B105FD828A502EC000CD983 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		4A8E78D1A7B56BD04E94D753 /* Pods-ZLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZLife.release.xcconfig"; path = "Target Support Files/Pods-ZLife/Pods-ZLife.release.xcconfig"; sourceTree = "<group>"; };
 		B5F9863D33D43CC87B3CAA5C /* Pods-ZLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZLife.debug.xcconfig"; path = "Target Support Files/Pods-ZLife/Pods-ZLife.debug.xcconfig"; sourceTree = "<group>"; };
 		E4B9E3AF3A9BB746A377F084 /* Pods_ZLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,9 +61,11 @@
 		1F3EF4BB27D510AF0081275B /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				2B105FCF28A4F710000CD983 /* ARRelate */,
 				1F3EF4BE27D510F60081275B /* MineViewController.swift */,
 				1F3EF4C027D511DC0081275B /* MineTopUserInfoViewCell.swift */,
 				1F3EF4C227D5135C0081275B /* MineUserToolViewCell.swift */,
+				2B1036B528A4D844000CD983 /* MineUserToolViewModel.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -95,6 +103,15 @@
 				1F50A6AA27CD4279000C702D /* CommonTools.swift */,
 			);
 			path = ZLife;
+			sourceTree = "<group>";
+		};
+		2B105FCF28A4F710000CD983 /* ARRelate */ = {
+			isa = PBXGroup;
+			children = (
+				2B105FD428A4FA60000CD983 /* ARSwiftUIView.swift */,
+				2B105FD828A502EC000CD983 /* ARViewController.swift */,
+			);
+			path = ARRelate;
 			sourceTree = "<group>";
 		};
 		9530BEA7BF90D9CEF3F67B2D /* Frameworks */ = {
@@ -249,12 +266,15 @@
 			files = (
 				1F50A69527CD1D33000C702D /* HomeViewController.swift in Sources */,
 				1F50A6A927CD3095000C702D /* RootTabBarController.swift in Sources */,
+				2B1036B628A4D844000CD983 /* MineUserToolViewModel.swift in Sources */,
 				1F50A6AB27CD4279000C702D /* CommonTools.swift in Sources */,
 				1F50A69127CD1D33000C702D /* AppDelegate.swift in Sources */,
 				1F3EF4C127D511DC0081275B /* MineTopUserInfoViewCell.swift in Sources */,
+				2B105FD528A4FA60000CD983 /* ARSwiftUIView.swift in Sources */,
 				1F50A69327CD1D33000C702D /* SceneDelegate.swift in Sources */,
 				1F3EF4C327D5135C0081275B /* MineUserToolViewCell.swift in Sources */,
 				1F3EF4BF27D510F60081275B /* MineViewController.swift in Sources */,
+				2B105FD928A502EC000CD983 /* ARViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

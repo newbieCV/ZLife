@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import SwiftUI
 
 //MARK: 我的页面
 
@@ -54,7 +55,7 @@ extension MineViewController: UICollectionViewDelegate, UICollectionViewDataSour
         if section == 0 {
             return 1
         } else {
-            return 50
+            return 12
         }
     }
     
@@ -66,7 +67,15 @@ extension MineViewController: UICollectionViewDelegate, UICollectionViewDataSour
             }
             return cell
         } else {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MineUserToolViewCell", for: indexPath)
+            let cell: MineUserToolViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MineUserToolViewCell", for: indexPath) as! MineUserToolViewCell
+            let model = MineUserToolViewModel.init(text: "AR", icon: "", url: "AR")
+            cell.setupData(model)
+            cell.tapEventCallback = { _ in
+                print("userToolCell 点击回调")
+                if model.url == "AR" {
+                    self.present(self.makeARSwiftUI(), animated: true)
+                }
+            }
             return cell
         }
     }
@@ -83,4 +92,13 @@ extension MineViewController: UICollectionViewDelegate, UICollectionViewDataSour
         }
     }
     
+}
+
+//MARK: ARKit相关
+
+extension MineViewController {
+    func makeARSwiftUI() -> UIViewController {
+        let arView = ARSwiftUIView()
+        return UIHostingController(rootView: arView)
+    }
 }
